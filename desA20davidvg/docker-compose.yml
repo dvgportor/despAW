@@ -1,0 +1,61 @@
+version: "3"
+services:
+  nginx:
+      image: nginx
+      ports:
+        - 80:80
+        - 443:443
+      volumes:
+        - ./nginx/test1.conf:/etc/nginx/conf.d/test1.conf
+        - ./nginx/test2.conf:/etc/nginx/conf.d/test2.conf
+        - ./nginx/server.pem:/etc/ssl/certs/server.pem
+        - ./nginx/server.key:/etc/ssl/private/server.key
+        - ./html1:/web/html1
+        - ./html2:/web/html2
+        - "./media:/web/html2/public/media"
+        - ./shop:/web/html2/public/shop
+        
+
+  f2b-docker:
+    image: 'crazymax/fail2ban:latest'
+    restart: unless-stopped
+    network_mode: host
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+    env_file:
+      - .env
+    volumes:
+      - /data/services/fail2ban/docker:/data
+      - /etc/localtime:/etc/localtime:ro
+      - /var/log:/var/log:ro
+  
+
+
+  php:
+    image: 'bitnami/php-fpm:7.4'
+    volumes:
+      - ./php/www.conf:/etc/php/7.4/fpm/pool.d/www.conf
+      - ./php/php.ini:/etc/php/7.4/fpm/php.ini
+      - ./html2:/web/html2
+      - ./html1:/web/html1
+      - ./shop:/web/html2/public/shop
+
+
+
+  bd:
+    image: mariadb
+    ports:
+      - "3306:3306"
+    env_file:
+      - .env
+    volumes:
+      - ./datos:/var/lib/mysql
+      - ./bd/a20davidvg.sql:/docker-entrypoint-initdb.d/a20davidvg.sql
+
+  phpmyadmin:
+    image: phpmyadmin
+    ports:
+      - 8081:80
+    environment:
+      - PMA_ARBITRARY=1
