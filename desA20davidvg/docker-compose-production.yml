@@ -1,0 +1,50 @@
+version: "3"
+services:
+  nginx:
+      image: nginx
+      ports:
+        - 80:80
+        - 443:443
+      volumes:
+        - ./nginx/mibot.conf:/etc/nginx/conf.d/mibot.conf
+        - ./nginx/a20davidvg.conf:/etc/nginx/conf.d/a20davidvg.conf
+        - ./nginx/server.pem:/etc/ssl/certs/server.pem
+        - ./nginx/server.key:/etc/ssl/private/server.key
+        - ./a20davidvg.kozow.com:/web/a20davidvg.kozow.com
+        - ./mibot.kozow.com:/web/mibot.kozow.com
+        - "./media:/web/a20davidvg.kozow.com/public/media"
+        - ./shop:/web/a20davidvg.kozow.com/public/shop
+        - ./env/.env:/web/a20davidvg.kozow.com/.env
+        
+
+  f2b-docker:
+    image: 'crazymax/fail2ban:latest'
+    restart: unless-stopped
+    network_mode: host
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+    env_file:
+      - .env
+    volumes:
+      - /data/services/fail2ban/docker:/data
+      - /etc/localtime:/etc/localtime:ro
+      - /var/log:/var/log:ro
+  
+
+
+  php:
+    build: php
+    volumes:
+      - ./php/www.conf:/etc/php/7.4/fpm/pool.d/www.conf
+      - ./php/php.ini:/etc/php/7.4/fpm/php.ini
+      - ./a20davidvg.kozow.com:/web/a20davidvg.kozow.com
+      - ./mibot.kozow.com:/web/mibot.kozow.com
+      - ./shop:/web/a20davidvg.kozow.com/public/shop
+      - "./media:/web/a20davidvg.kozow.com/public/media"
+
+  
+      
+  
+  #docker run --name mariadb -p 3306:3306 -e POSTGRES_PASSWORD=postgres postgres
+

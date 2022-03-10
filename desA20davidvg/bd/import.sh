@@ -1,0 +1,1 @@
+docker exec -i bd mysql -uuser -ppassword a20davidvg < data.sql

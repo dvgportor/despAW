@@ -18,8 +18,17 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
+-- Base de datos: "prestashop"
+--
+
+CREATE DATABASE IF NOT EXISTS `prestashop` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+
+
+
+--
 -- Base de datos: `a20davidvg`
 --
+
 CREATE DATABASE IF NOT EXISTS `a20davidvg` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 USE `a20davidvg`;
 
