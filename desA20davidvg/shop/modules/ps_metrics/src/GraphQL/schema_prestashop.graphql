@@ -1,5 +1,0 @@
-
-type Mutation {
-  setProductTourFreeDone(done: Boolean): Boolean
-  setProductTourAdvancedDone(done: Boolean): Boolean
-}

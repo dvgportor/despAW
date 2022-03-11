@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.43, created on 2022-03-10 15:54:16
+/* Smarty version 3.1.43, created on 2022-03-11 20:56:47
   from '/web/a20davidvg.kozow.com/public/shop/themes/classic/templates/_partials/javascript.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.43',
-  'unifunc' => 'content_622a1118582ec5_61585086',
+  'unifunc' => 'content_622ba97f968609_87129158',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '22fa9ebea3a3dfb31ba4c0a9b2241e8387ede09a' => 
     array (
       0 => '/web/a20davidvg.kozow.com/public/shop/themes/classic/templates/_partials/javascript.tpl',
-      1 => 1646923827,
+      1 => 1647026970,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_622a1118582ec5_61585086 (Smarty_Internal_Template $_smarty_tpl) {
+function content_622ba97f968609_87129158 (Smarty_Internal_Template $_smarty_tpl) {
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['javascript']->value['external'], 'js');
 $_smarty_tpl->tpl_vars['js']->do_else = true;
 if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['js']->value) {

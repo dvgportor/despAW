@@ -195,11 +195,4 @@
   195 => 'Symfony\\Component\\HttpKernel\\Controller\\ControllerResolverInterface',
   196 => 'Symfony\\Component\\HttpKernel\\Controller\\TraceableArgumentResolver',
   197 => 'Symfony\\Component\\HttpKernel\\Controller\\TraceableControllerResolver',
-  198 => 'PrestaShop\\Module\\Mbo\\Controller\\Admin\\ModuleCatalogController',
-  199 => 'PrestaShop\\Module\\Mbo\\Controller\\Admin\\ModuleRecommendedController',
-  200 => 'PrestaShop\\Module\\Mbo\\Controller\\Admin\\ModuleSelectionController',
-  201 => 'PrestaShop\\Module\\Mbo\\Controller\\Admin\\ThemeCatalogController',
-  202 => 'PrestaShop\\Module\\PrestashopCheckout\\Controller\\AbstractFrontController',
-  203 => 'PrestaShop\\Module\\PrestashopCheckout\\Entity\\PaypalAccount',
-  204 => 'PrestaShop\\Module\\PrestashopCheckout\\Entity\\PsAccount',
 );

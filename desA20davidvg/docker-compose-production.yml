@@ -14,7 +14,8 @@ services:
         - ./mibot.kozow.com:/web/mibot.kozow.com
         - "./media:/web/a20davidvg.kozow.com/public/media"
         - ./shop:/web/a20davidvg.kozow.com/public/shop
-        - ./env/.env:/web/a20davidvg.kozow.com/.env
+        #- ./env/.env:/web/a20davidvg.kozow.com/.env
+
         
 
   f2b-docker:
@@ -31,10 +32,9 @@ services:
       - /etc/localtime:/etc/localtime:ro
       - /var/log:/var/log:ro
   
-
-
   php:
-    build: php
+    image: 'bitnami/php-fpm:7.4'
+    #build: php
     volumes:
       - ./php/www.conf:/etc/php/7.4/fpm/pool.d/www.conf
       - ./php/php.ini:/etc/php/7.4/fpm/php.ini
@@ -42,9 +42,5 @@ services:
       - ./mibot.kozow.com:/web/mibot.kozow.com
       - ./shop:/web/a20davidvg.kozow.com/public/shop
       - "./media:/web/a20davidvg.kozow.com/public/media"
-
-  
-      
-  
-  #docker run --name mariadb -p 3306:3306 -e POSTGRES_PASSWORD=postgres postgres
+     # - ./env/.env:/web/a20davidvg.kozow.com/.env
 

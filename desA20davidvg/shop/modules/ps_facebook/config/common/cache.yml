@@ -1,4 +1,0 @@
-services:
-  ps_facebook.cache:
-    class: 'string'
-    factory: ['PrestaShop\Module\PrestashopFacebook\Factory\CacheFactory', 'getCachePath']

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.43, created on 2022-03-10 15:55:13
+/* Smarty version 3.1.43, created on 2022-03-11 19:43:45
   from '/web/a20davidvg.kozow.com/public/shop/themes/classic/templates/catalog/_partials/product-variants.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.43',
-  'unifunc' => 'content_622a11519bfae8_27288754',
+  'unifunc' => 'content_622ba671587391_43475618',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '51338266ae93a46691379d7252f4c5cdaa400d2b' => 
     array (
       0 => '/web/a20davidvg.kozow.com/public/shop/themes/classic/templates/catalog/_partials/product-variants.tpl',
-      1 => 1646923827,
+      1 => 1647026970,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_622a11519bfae8_27288754 (Smarty_Internal_Template $_smarty_tpl) {
+function content_622ba671587391_43475618 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="product-variants js-product-variants">
   <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['groups']->value, 'group', false, 'id_attribute_group');
