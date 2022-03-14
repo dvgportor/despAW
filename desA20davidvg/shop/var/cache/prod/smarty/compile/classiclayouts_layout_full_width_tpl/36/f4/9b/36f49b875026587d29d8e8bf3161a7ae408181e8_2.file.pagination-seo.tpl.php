@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.43, created on 2022-03-11 20:56:47
+/* Smarty version 3.1.43, created on 2022-03-14 15:00:23
   from '/web/a20davidvg.kozow.com/public/shop/themes/classic/templates/_partials/pagination-seo.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.43',
-  'unifunc' => 'content_622ba97f95b0b6_97700799',
+  'unifunc' => 'content_622f4a77902d19_80891789',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '36f49b875026587d29d8e8bf3161a7ae408181e8' => 
     array (
       0 => '/web/a20davidvg.kozow.com/public/shop/themes/classic/templates/_partials/pagination-seo.tpl',
-      1 => 1647026970,
+      1 => 1647266055,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_622ba97f95b0b6_97700799 (Smarty_Internal_Template $_smarty_tpl) {
+function content_622f4a77902d19_80891789 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/web/a20davidvg.kozow.com/public/shop/vendor/smarty/smarty/libs/plugins/modifier.replace.php','function'=>'smarty_modifier_replace',),));
 ?>
 

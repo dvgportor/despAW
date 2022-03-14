@@ -340,7 +340,7 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
      */
     protected function getDoctrine_Dbal_DefaultConnectionService()
     {
-        return $this->services['doctrine.dbal.default_connection'] = ${($_ = isset($this->services['doctrine.dbal.connection_factory']) ? $this->services['doctrine.dbal.connection_factory'] : ($this->services['doctrine.dbal.connection_factory'] = new \Doctrine\Bundle\DoctrineBundle\ConnectionFactory([]))) && false ?: '_'}->createConnection(['driver' => 'pdo_mysql', 'host' => 'sql11.freesqldatabase.com', 'port' => '', 'dbname' => 'sql11478466', 'user' => 'sql11478466', 'password' => '5EiQAFvYJz', 'charset' => 'utf8mb4', 'driverOptions' => [1002 => 'SET sql_mode=(SELECT REPLACE(@@sql_mode,\'ONLY_FULL_GROUP_BY\',\'\'))'], 'defaultTableOptions' => []], new \Doctrine\DBAL\Configuration(), new \Symfony\Bridge\Doctrine\ContainerAwareEventManager($this), ['enum' => 'string']);
+        return $this->services['doctrine.dbal.default_connection'] = ${($_ = isset($this->services['doctrine.dbal.connection_factory']) ? $this->services['doctrine.dbal.connection_factory'] : ($this->services['doctrine.dbal.connection_factory'] = new \Doctrine\Bundle\DoctrineBundle\ConnectionFactory([]))) && false ?: '_'}->createConnection(['driver' => 'pdo_mysql', 'host' => 'sql11.freesqldatabase.com', 'port' => '', 'dbname' => 'sql11479002', 'user' => 'sql11479002', 'password' => 'jZW5YDIx6r', 'charset' => 'utf8mb4', 'driverOptions' => [1002 => 'SET sql_mode=(SELECT REPLACE(@@sql_mode,\'ONLY_FULL_GROUP_BY\',\'\'))'], 'defaultTableOptions' => []], new \Doctrine\DBAL\Configuration(), new \Symfony\Bridge\Doctrine\ContainerAwareEventManager($this), ['enum' => 'string']);
     }
 
     /**
@@ -1359,24 +1359,24 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
         return [
             'database_host' => 'sql11.freesqldatabase.com',
             'database_port' => '',
-            'database_name' => 'sql11478466',
-            'database_user' => 'sql11478466',
-            'database_password' => '5EiQAFvYJz',
+            'database_name' => 'sql11479002',
+            'database_user' => 'sql11479002',
+            'database_password' => 'jZW5YDIx6r',
             'database_prefix' => 'ps_',
             'database_engine' => 'InnoDB',
             'mailer_transport' => 'smtp',
             'mailer_host' => '127.0.0.1',
             'mailer_user' => NULL,
             'mailer_password' => NULL,
-            'secret' => 'ZQ9nIgTTwavooRIcWUz2YOTjMUVXhTODmChtY7S2GpM7WAQKExUbP2hen3kwuqwv',
+            'secret' => 'CSOIAfaMqmvFJUuQY9Aiy812FasP5sTipzieQqWnCjCD4iIJ6DV8sCFr0aQfhxgC',
             'ps_caching' => 'CacheMemcache',
             'ps_cache_enable' => false,
-            'ps_creation_date' => '2022-03-11',
+            'ps_creation_date' => '2022-03-14',
             'locale' => 'es-ES',
             'use_debug_toolbar' => true,
-            'cookie_key' => 'REumCoTX6FMY49Eb4ILh74nxqu7XrMDBha9ju0RMrZXVFfwScIJzbOqjHs5OXbzM',
-            'cookie_iv' => '68UytsMSVnusudPKyzyT461qkyJ9sgZN',
-            'new_cookie_key' => 'def00000f5e9f102e026530ef9a34ed1d71e1e7414ad2db5e2c391f9ffe0cab023df9e59d9579af838ee29c612baac5039c05b1ed83498e13f19b2f50eda8c00a81f1756',
+            'cookie_key' => 'TVGuDHSzADcXVyNp3vYG0oQ1ywLtks44LwBBfc28p6D7YIrfrgGPRJQ142XHCNjf',
+            'cookie_iv' => 'hNMz7uuyWF30eMiJLnmYKERSmhqr5TJH',
+            'new_cookie_key' => 'def00000c8f04e4a3ab4c4259018cdc9f231bb545a9eec8e0b003590392eb06125da6631649a24e4a7bf731962bbe3a244c6fc8fbb8b25eb4be01b8e72452cc0c2e93369',
             'cache.driver' => 'array',
             'kernel.bundles' => [
 
@@ -1422,25 +1422,6 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
                 31 => 'ps_shoppingcart',
                 32 => 'ps_socialfollow',
                 33 => 'ps_themecusto',
-                34 => 'ps_wirepayment',
-                35 => 'statsbestcategories',
-                36 => 'statsbestcustomers',
-                37 => 'statsbestproducts',
-                38 => 'statsbestsuppliers',
-                39 => 'statsbestvouchers',
-                40 => 'statscarrier',
-                41 => 'statscatalog',
-                42 => 'statscheckup',
-                43 => 'statsdata',
-                44 => 'statsforecast',
-                45 => 'statsnewsletter',
-                46 => 'statspersonalinfos',
-                47 => 'statsproduct',
-                48 => 'statsregistrations',
-                49 => 'statssales',
-                50 => 'statssearch',
-                51 => 'statsstock',
-                52 => 'welcome',
             ],
             'ps_cache_dir' => '/web/a20davidvg.kozow.com/public/shop/var/cache/prod/',
             'mail_themes_uri' => '/mails/themes',

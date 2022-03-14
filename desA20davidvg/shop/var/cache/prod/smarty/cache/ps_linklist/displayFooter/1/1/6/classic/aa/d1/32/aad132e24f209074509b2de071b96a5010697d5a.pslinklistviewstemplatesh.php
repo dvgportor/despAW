@@ -1,30 +1,30 @@
 <?php
-/* Smarty version 3.1.43, created on 2022-03-11 20:56:48
+/* Smarty version 3.1.43, created on 2022-03-14 15:00:24
   from 'module:pslinklistviewstemplatesh' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.43',
-  'unifunc' => 'content_622ba980a4c0b1_06753828',
+  'unifunc' => 'content_622f4a78985300_40136365',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '906548e89c8c6025457ddaeffb1980a0c743b872' => 
     array (
       0 => 'module:pslinklistviewstemplatesh',
-      1 => 1647026970,
+      1 => 1647266055,
       2 => 'module',
     ),
   ),
   'cache_lifetime' => 31536000,
 ),true)) {
-function content_622ba980a4c0b1_06753828 (Smarty_Internal_Template $_smarty_tpl) {
+function content_622f4a78985300_40136365 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->smarty->ext->_tplFunction->registerTplFunctions($_smarty_tpl, array (
   'renderLogo' => 
   array (
     'compiled_filepath' => '/web/a20davidvg.kozow.com/public/shop/var/cache/prod/smarty/compile/classiclayouts_layout_full_width_tpl/bb/5a/12/bb5a1240f4ffe11de5847e1180a6957902b2dbf8_2.file.helpers.tpl.php',
     'uid' => 'bb5a1240f4ffe11de5847e1180a6957902b2dbf8',
-    'call_name' => 'smarty_template_function_renderLogo_238293607622ba97f923de5_16358350',
+    'call_name' => 'smarty_template_function_renderLogo_522133048622f4a778d1712_73431637',
   ),
 ));
 ?><div class="col-md-6 links">
@@ -48,7 +48,7 @@ $_smarty_tpl->smarty->ext->_tplFunction->registerTplFunctions($_smarty_tpl, arra
                 href="http://a20davidvg2.kozow.com/shop/index.php?controller=prices-drop"
                 title="Our special products"
                             >
-              Ofertas
+              Prices drop
             </a>
           </li>
                   <li>
@@ -56,9 +56,9 @@ $_smarty_tpl->smarty->ext->_tplFunction->registerTplFunctions($_smarty_tpl, arra
                 id="link-product-page-new-products-1"
                 class="cms-page-link"
                 href="http://a20davidvg2.kozow.com/shop/index.php?controller=new-products"
-                title="Novedades"
+                title="Our new products"
                             >
-              Novedades
+              New products
             </a>
           </li>
                   <li>
@@ -66,9 +66,9 @@ $_smarty_tpl->smarty->ext->_tplFunction->registerTplFunctions($_smarty_tpl, arra
                 id="link-product-page-best-sales-1"
                 class="cms-page-link"
                 href="http://a20davidvg2.kozow.com/shop/index.php?controller=best-sales"
-                title="Los más vendidos"
+                title="Our best sales"
                             >
-              Los más vendidos
+              Best sales
             </a>
           </li>
               </ul>
@@ -140,9 +140,9 @@ $_smarty_tpl->smarty->ext->_tplFunction->registerTplFunctions($_smarty_tpl, arra
                 id="link-static-page-contact-2"
                 class="cms-page-link"
                 href="http://a20davidvg2.kozow.com/shop/index.php?controller=contact"
-                title="Contáctenos"
+                title="Use our form to contact us"
                             >
-              Contacte con nosotros
+              Contact us
             </a>
           </li>
                   <li>
@@ -150,9 +150,9 @@ $_smarty_tpl->smarty->ext->_tplFunction->registerTplFunctions($_smarty_tpl, arra
                 id="link-static-page-sitemap-2"
                 class="cms-page-link"
                 href="http://a20davidvg2.kozow.com/shop/index.php?controller=sitemap"
-                title="¿Perdido? Encuentre lo que está buscando"
+                title="Lost ? Find what your are looking for"
                             >
-              Mapa del sitio
+              Sitemap
             </a>
           </li>
                   <li>
@@ -162,7 +162,7 @@ $_smarty_tpl->smarty->ext->_tplFunction->registerTplFunctions($_smarty_tpl, arra
                 href="http://a20davidvg2.kozow.com/shop/index.php?controller=stores"
                 title=""
                             >
-              Tiendas
+              Stores
             </a>
           </li>
               </ul>
